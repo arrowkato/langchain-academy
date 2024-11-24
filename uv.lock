@@ -300,6 +300,18 @@ wheels = [
 ]
 
 [[package]]
+name = "dydantic"
+version = "0.0.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/49/29/df1a474a102c48adb40b5365c6b28632677c455b958382119b3b11d3906e/dydantic-0.0.7.tar.gz", hash = "sha256:6430f038fd32b72782722ef1ddf39837ba251fbf7a183ced3e1597fac4e4862e", size = 8112 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/62/d9/6d1d8956e5356c77cc37c815b9c3156939ce07ac3218dde047fbce67194f/dydantic-0.0.7-py3-none-any.whl", hash = "sha256:5531220d876b77451bb045155f83534c69d13bf76d4d628dcaa920d933a7ae89", size = 8634 },
+]
+
+[[package]]
 name = "executing"
 version = "2.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -611,6 +623,7 @@ dependencies = [
     { name = "langgraph-sdk" },
     { name = "langsmith" },
     { name = "tavily-python" },
+    { name = "trustcall" },
     { name = "wikipedia" },
 ]
 
@@ -633,6 +646,7 @@ requires-dist = [
     { name = "langgraph-sdk", specifier = ">=0.1.33" },
     { name = "langsmith", specifier = ">=0.1" },
     { name = "tavily-python", specifier = ">=0.5" },
+    { name = "trustcall", specifier = ">=0.0.26" },
     { name = "wikipedia", specifier = ">=1.4" },
 ]
 
@@ -1523,6 +1537,20 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/eb/79/72064e6a701c2183016abbbfedaba506d81e30e232a68c9f0d6f6fcd1574/traitlets-5.14.3.tar.gz", hash = "sha256:9ed0579d3502c94b4b3732ac120375cda96f923114522847de4b3bb98b96b6b7", size = 161621 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/00/c0/8f5d070730d7836adc9c9b6408dec68c6ced86b304a9b26a14df072a6e8c/traitlets-5.14.3-py3-none-any.whl", hash = "sha256:b74e89e397b1ed28cc831db7aea759ba6640cb3de13090ca145426688ff1ac4f", size = 85359 },
+]
+
+[[package]]
+name = "trustcall"
+version = "0.0.26"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "dydantic" },
+    { name = "jsonpatch" },
+    { name = "langgraph" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/33/a1/8e238ab8bd7feb665fb4edac6a65c052eeb693f5b71f28b1d93c28ba1a07/trustcall-0.0.26.tar.gz", hash = "sha256:3b7eb128c2ab616e9914f544ed8f6a26de735b34ef4bf06e21821d000e047aee", size = 31939 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3b/d8/0c6f787f232f7c5093fe18f09c52a077f1ba18f47798d8a3a94ccb4e437a/trustcall-0.0.26-py3-none-any.whl", hash = "sha256:e36690cd006c063c0f0f0356fba77bf562e2099c2bb7ede3e342b2d0530233c5", size = 24045 },
 ]
 
 [[package]]
